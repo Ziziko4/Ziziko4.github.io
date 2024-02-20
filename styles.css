@@ -1,0 +1,135 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:  #29282aae;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #29282aae;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Стили для изображений */
+.image-container {
+    display: flex; /* Используем flexbox для размещения изображений */
+    justify-content: space-between; /* Равномерно распределяем изображения по ширине контейнера */
+}
+
+.image-container img {
+    max-width: 49%; /* Устанавливаем максимальную ширину изображения в 49% */
+}
+
+.image-container img:nth-child(1) {
+    order: 2; /* Порядок первого изображения (считаем с 1) */
+}
+
+.image-container img:nth-child(2) {
+    order: 1; /* Порядок второго изображения (считаем с 1) */
+}
+
+    /* Стили для карты Google Maps */
+#map {
+    width: 100%;
+    max-width: 100%; /* Максимальная ширина карты равна ширине контейнера */
+    height: 400px; /* Высота карты по умолчанию */
+}
+
+/* Медиа-запросы для адаптивности карты на мобильных устройствах */
+@media screen and (max-width: 600px) {
+    #map {
+        height: 300px; /* Уменьшение высоты карты на маленьких экранах */
+    }
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+}
+
+
+    .instagram-button {
+        background-color: #405de6; /* Цвет фона кнопки */
+        color: white; /* Цвет текста кнопки */
+        padding: 10px 20px; /* Внутренние отступы кнопки */
+        border: none; /* Убираем границу кнопки */
+        border-radius: 5px; /* Закругляем углы кнопки */
+        text-decoration: none; /* Убираем подчеркивание ссылки */
+        font-size: 16px; /* Размер текста кнопки */
+        cursor: pointer; /* Изменяем указатель при наведении на кнопку */
+          
+    }
+
+    .instagram-button:hover {
+        background-color: #7289da; /* Цвет фона кнопки при наведении */
+    }
+ /* шрифты */
+ @font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+  }
+
+  @font-face {
+    font-weight: 400; /* Соответствует значению normal */
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+  }
+  
+  @font-face {
+    font-weight: 700; /* Соответствует значению bold */
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf");
+  }
+  
+  @font-face {
+    font-weight: 300;
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Light.ttf");
+  }
+/* instagram */
+  .instagram-container {
+    display: inline-block; /* Устанавливаем элементы в строку */
+    vertical-align: middle; /* Выравниваем по центру по вертикали */
+}
+
+.instagram-link img {
+    vertical-align: middle; /* Выравниваем логотип по центру по вертикали */
+}
+
+.instagram-link span {
+    margin-right: 10px; /* Отступ справа от логотипа */
+}
+
+
+ /* logo */
+    .brand-container {
+        display: flex; /* Располагаем элементы в контейнере горизонтально */
+        justify-content: center; /* Выравниваем элементы по центру по горизонтали */
+        flex-wrap: wrap; /* Позволяет переносить элементы на новую строку, если они не помещаются в одну строку */
+    }
+
+    .brand-logo {
+        width: 100px; /* Устанавливаем новую ширину для логотипов */
+        margin: 50px; /* Устанавливаем отступ между логотипами */
+    }
+
+    .brand-container h2 {
+        margin-bottom: 30px; /* Увеличиваем отступ после заголовков */
+    }
